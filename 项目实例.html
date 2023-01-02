@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+          width: 300px;
+          height: 200px;
+          border: 1px solid #000;
+        }
+      
+        /* 
+              浮动的顺序贴靠特性:
+      
+              子盒子会按顺序进行贴靠，
+              如果没有足够空间，则会寻找在前一个兄弟元素
+          */
+        .box .c1 {
+          width: 200px;
+          height: 100px;
+          background-color: orange;
+          float: left;
+        }
+      
+        .box .c2 {
+          width: 100px;
+          height: 50px;
+          background-color: skyblue;
+          float: left;
+        }
+      
+        .box .c3 {
+          width: 100px;
+          height: 50px;
+          background-color: tomato;
+          float: left;
+        }
+      </style>
+</head>
+<body>
+    <h1>浮动的顺序贴靠特性</h1>
+
+    <div class="box">
+      <div class="c1"></div>
+      <div class="c2"></div>
+      <div class="c3"></div>
+    </div>
+</body>
+</html>

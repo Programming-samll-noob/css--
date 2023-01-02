@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 600px;
+        /* height: 200px; */
+        background-color: orange;
+        margin: 0 auto;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .box .one {
+        width: 200px;
+        height: 180px;
+        background-color: rgb(50, 236, 8);
+        margin-right: 10px;
+        float: left;
+      }
+      .box .two {
+        height: 180px;
+        width: 370px;
+        background-color: rgb(11, 43, 220);
+        float: left;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box clearfix">
+      <box1 class="one"></box1>
+      <box2 class="two"></box2>
+    </div>
+  </body>
+</html>

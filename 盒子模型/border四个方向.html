@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        /* 单独控制某个方向 */
+        border-top: 5px solid red;
+        border-left: 4px dotted blue;
+        border-right: 5px dashed green;
+        border-bottom: 5px solid black;
+        /* 去掉某个方向的边框 */
+        /* border-top: none; */
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 5px solid blue;
+        /* border-top: none; */
+      }
+      .box3 {
+        /* width: 100px;
+        height: 100px; */
+        /* border-left: 20px solid red; */
+        border-top: 20px solid red;
+        border-bottom: 20px solid khaki;
+        border-top-color: #000;
+        border-bottom-style: dotted;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box1 box2"></div>
+    <div class="box3">马文彬</div>
+  </body>
+</html>
+<!-- 
+    border:宽 风格 颜色
+    border-top border-right border-left border-bottom 4个不同方向
+    border-color border-style border-width
+    border-top-color/style/width
+ -->

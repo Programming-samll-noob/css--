@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .box1 {
+        /* background-color: skyblue; */
+        /* margin-bottom: 40px; */
+        /* 解决外边距重叠方法1 */
+        /* display: inline-block; 涉及到BFC */
+        /* 解决外边距重叠方法2 */
+        margin-bottom: 80px;
+        padding-bottom: 40px;
+      }
+      .box2 {
+        background-color: red;
+        /* margin-top: 40px; */
+      }
+      /* 解决外边距重叠方法3，盒子中套一个盒子，消除父元素的颜色属性，使内容与下边的盒子距离为需要的距离 */
+      .box3 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1"><div class="box box3">马文彬</div></div>
+    <div class="box box2">马文彬</div>
+  </body>
+</html>

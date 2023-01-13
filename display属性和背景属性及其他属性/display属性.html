@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div,
+      span {
+        width: 200px;
+        height: 200px;
+      }
+      div {
+        background-color: red;
+        /* 设置为行内元素 */
+        /* display: inline; */
+        /* 设置元素为行内块元素，具有宽高属性，并且不会独占一行 */
+        /* display: inline-block; */
+        /* 使用display：cell指定内容为单元格形式 */
+        /* display: table-cell; */
+        /* 隐藏元素 */
+        /* 占据原有物理位置,需要使用display:block来显示元素 */
+        /* display: none; */
+        /* display: block; */
+        /* 如果元素是使用visibility:hidden隐藏元素，只能使用Visibility:visible来显示元素 */
+        /* visibility: hidden; */
+        /* visibility: visible; */
+        /* 设置元素透明度 */
+        /* opacity: 0.3; */
+      }
+      span {
+        background-color: pink;
+        /* 设置为块状元素 */
+        /* display: block; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 块状元素，具有宽高属性，独占一行 -->
+    <div>马文彬</div>
+    <!-- <div>马文彬</div>
+    <div>马文彬</div>
+    <div>马文彬</div>
+    <div>马文彬</div>
+    <div>马文彬</div>
+    <div>马文彬</div>
+    <div>马文彬</div> -->
+
+    <!-- 行内元素，没有宽高属性，不会独占一行 -->
+    <span>马文彬</span>
+  </body>
+</html>
+<!-- 
+    visibility:设置元素是否显示
+    visible显示
+    hidden隐藏
+    注意：visibility和display：none的区别：vilibility仅仅隐藏了内容的显示，但仍占据物理空间，
+    display:none的隐藏方式隐藏了内容和物理空间
+ -->

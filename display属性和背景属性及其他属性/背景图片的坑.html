@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        width: 300px;
+        height: 300px;
+        border: 1px solid red;
+        background-image: url("./imags/123.jpg"), url(./imags/296028.jpg),
+          url("./imags/861e4bbcb22d83c7e43da027ea202e30.jpg");
+        background-size: 200px 120px, 120px 150px, 170px 170px;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        /* background-image: url("./imags/123.jpg"); */
+      }
+      .box2 {
+        width: 500px;
+        height: 500px;
+        border: 1px solid red;
+        /* background-image: url("imags/123.jpg"); */
+        background-image: url("imags/123.jpg"),
+          linear-gradient(to right, red, yellow, blue);
+        background-size: 30px 30px, 40px 40px;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </body>
+</html>
+<!-- 
+    如果repeat没有指定，则这个照片的相关属性被第一个属性控制
+    图片的大小也遵循以上原则
+ -->

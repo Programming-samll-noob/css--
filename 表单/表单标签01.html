@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>form表单</h1>
+    <p>收集用户的输入信息：登录 注册 等等</p>
+    <form action="/user" method="post">
+      <p>用户名:<input type="text" placeholder="输入用户名" /></p>
+      <!-- value为默认值 -->
+      <p>真实姓名:<input type="text" value="输入真实姓名" /></p>
+      <!-- disabled可以禁止用户修改某些信息 -->
+      <!-- 多种标签都可用 -->
+      <p>收货地址：<input type="text" value="河南省" disabled /></p>
+      <!-- password自动隐藏输入的信息 -->
+      <p>输入密码：<input type="password" /></p>
+      <!-- 单选标签 -->
+      <p>
+        性别：
+        <!-- name使三个按钮互斥 -->
+        <!-- label使按钮的作用区域变大 -->
+        <label><input type="radio" name="sex" />男</label>
+        <label><input type="radio" name="sex" />女</label>
+        <label><input type="radio" name="sex" />保密</label>
+      </p>
+      <!-- 多选标签 -->
+      <!-- checked表示默认选中 -->
+      <p>
+        兴趣爱好：<br /><br />
+        <label><input type="checkbox" name="hobby" />篮球</label>>
+        <label><input type="checkbox" name="hobby" />书法</label>>
+        <label><input type="checkbox" name="hobby" disabled />足球</label>>
+        <label><input type="checkbox" name="hobby" />象棋</label>>
+      </p>
+      <!-- 下拉菜单 -->
+      <p>
+        请选择：<br /><br />
+        &nbsp;&nbsp;省：
+        <select name="" id="">
+          <option value="河南">河南</option>
+          <option value="北京">北京</option>
+          <option value="湖南">湖南</option>
+          <option value="广东">广东</option>
+        </select>
+        &nbsp;&nbsp;市：
+        <select name="" id="">
+          <option value="南阳">南阳</option>
+          <option value="北京市">北京市</option>
+          <option value="长沙">长沙</option>
+          <option value="广州">广州</option>
+        </select>
+        &nbsp;&nbsp;区：
+        <select name="" id="">
+          <option value="悦米">悦米</option>
+          <option value="天心">天心</option>
+          <option value="雨花">雨花</option>
+          <option value="贫民">贫民</option>
+        </select>
+      </p>
+      <!-- 多行文本框 -->
+      <!-- 用于用户输入文本，例如qq输入框 -->
+      <p>
+        用户评论：
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </p>
+      <!-- 按钮 -->
+      <p>
+        <input type="button" value="普通按钮" />
+        <button>普通按钮</button>
+      </p>
+      <p>
+        <input type="submit" value="提交按钮" />
+      </p>
+      <p>
+        <input type="reset" value="重置按钮" />
+      </p>
+    </form>
+  </body>
+</html>

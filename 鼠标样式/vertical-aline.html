@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+        margin: 10px;
+        overflow: inherit;
+      }
+      span{
+        /* display: inline-block; */
+        background-color: yellow;
+        line-height: 100px;
+        font-size: 12px;
+        /* margin:10px; */
+      }
+      span.bas {
+        vertical-align: baseline;
+      }
+      span.sub{
+        vertical-align: sub;
+      }
+      span.sup{
+        vertical-align: super;
+      }
+      span.text-top{
+        vertical-align: text-top;
+      }
+      span.top{
+        vertical-align: top;
+      }
+      span.middle{
+        vertical-align: middle;
+      }
+      span.num{
+        vertical-align:-10px;
+      }
+      span.b{
+        line-height: 50px;
+        vertical-align: 20%;
+      }
+      span.bo{
+        vertical-align: bottom;
+      }
+      /* table tr td{
+        border: 2px solid red;
+        height: 100px;
+      }
+      .top{
+        vertical-align: top;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box">文字Xx<span class="bas">文字</span></div>
+    <div class="box">
+      文字Xx <sub>2</sub> <span class="sub">x-sub</span>文字
+    </div>
+    <div class="box">
+      文字Xx <sup>2</sup> <span class="sup">x-sup</span>文字
+    </div>
+    <div class="box">文字Xx<span class="text-top">x-text-top</span>文字</div>
+  </body>
+</div>
+    <div class="box">文字Xx<span class="top">x-top</span>文字</div>
+    <!-- /* 底部与顶部属性相同 */ -->
+    <div class="box">文字Xx<span class="middle">x-middle</span>文字</div>
+    <div class="box">文字Xx<span class="num">x-num</span>文字</div>
+    <div class="box">文字Xx<span class="b">x-b</span>文字</div>
+    <div class="box">文字Xx<span class="bo">x-b</span>文字</div>
+    <table>
+        <tr>
+            <td class="ba">文字</td>
+            <td class="top">文字</td>
+            <td class="bo">文字</td>
+            <td class="mi">文字</td>
+        </tr>
+        <tr>
+            <td>mama</td>
+            <td>mama</td>
+            <td>mama</td>
+            <td>mama</td>
+        </tr>
+    </table>
+  </body>
+</html>
